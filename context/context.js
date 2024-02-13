@@ -12,14 +12,14 @@ import {
      Ether,
       Token,
        CurrencyAmount,
-        percent,
+        Percent,
     } from "@uniswap/sdk-core";
     import {Trade as V2Trade} from "@uniswap/v2-sdk";
     import {
         Pool,
          nearestUsableStick,
           TickMath,
-           Tick_SPACING,
+           TICK_SPACING,
             FeeAmount,
              V3Trade,
               Route as V3Route
@@ -29,7 +29,7 @@ import {
             import {MixRouterTrade, Trade as RouterTrade} from "@uniswap/router-sdk";
             import IuniswapV3Pool from "@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json"
 
-
+            
 
 
         //Internal import
