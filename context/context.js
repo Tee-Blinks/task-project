@@ -255,20 +255,26 @@ import {
                         from: RECIPIENT,
                     });
 
-                    console.log("------------------SUCCESS");
-                    console.log("STATUS", receipt.status);
+                    console.log("------------------CALLING_ME");
                     const receipt = await tx.wait()
 
-                    console.log("------------------CALLING_ME");
 
-                    console.log("EthBalance:", ethers.utils.formatUnits(ethBalance, 18));
-                    console.log("tokenA:", tokenA);
-                    console.log("tokenB:", tokenB);
-                    console.log("------------------AFTER");
+                   
+                    console.log("------------------SUCCESS");
+                    console.log("STATUS", receipt.status);
+
+                    
 
                     ethBalance = await provider.getBalance(RECIPIENT);
                     tokenA = await tokenAddress1.balance;
                     tokenA = await tokenAddress2.balance;
+                    console.log("------------------AFTER");
+
+
+                    console.log("EthBalance:", ethers.utils.formatUnits(ethBalance, 18));
+                    console.log("tokenA:", tokenA);
+                    console.log("tokenB:", tokenB);
+                    
 
                 } catch (error) {
                     const errorMsg = parseErrorMsg(error);
