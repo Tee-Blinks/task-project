@@ -13,8 +13,10 @@ import {
   CurrencyAmount,
   Percent,
 } from "@uniswap/sdk-core";
+
 import { Trade as V2Trade } from "@uniswap/v2-sdk";
-import {
+
+  import {
   Pool,
   nearestUsableTick,
   TickMath,
@@ -280,3 +282,4 @@ export const PROVIDER = ({ children }) => {
     </CONTEXT.Provider>
   );
 };
+
