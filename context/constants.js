@@ -5,7 +5,7 @@ import web3Modal from "web3modal";
 //INTERNAL IMPORT
 import ERC20ABI from "./abi.json";
 
-export const ERC20ABI = ERC20ABI;
+export { ERC20ABI };
 
 
 export const V3_SWAP_ROUTER_ADDRESS =

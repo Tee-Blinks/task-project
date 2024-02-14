@@ -286,7 +286,7 @@ import {
 
             return (
                 <CONTEXT.Provider value={{
-                    TOKEN_SWAP,
+                    SWAP_SPHERE,
                     LOAD_TOKEN,
                     notifyError,
                     notifySuccess,
