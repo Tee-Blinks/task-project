@@ -9,6 +9,7 @@ const Hero = ({  setInputAmount,
   token_2,
   setToken_1,
   setToken_2,
+  inputAmount,
   swap,
 
 }) => {
@@ -117,7 +118,7 @@ const Hero = ({  setInputAmount,
                         type="text" 
                         placeholder={token_2?.symbol || "Select"}
                         className="form-control"
-                        onClick={() => setOpenToken(true)}
+                        onChange={(e)=>setInputAmount(e.target.value)}
 
                       />
                   </div>
@@ -135,7 +136,7 @@ const Hero = ({  setInputAmount,
                   )}
               </div>
 
-              <a onClick={() => swap()} className="button button-1">Exchange</a>
+              <a onClick={() => swap(token_1, token_2, inputAmount)} className="button button-1">Exchange</a>
             </div>
           </div>
         </div>

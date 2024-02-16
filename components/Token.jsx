@@ -79,7 +79,7 @@ const Token = ({
                 {
                   displayToken ? (
                     <a 
-                    onClick={() => searchToken()}
+                    onClick={() => selectToken()}
                     className="button button-1"
                     >
                       {shortenAddress(displayToken?.address)}{displayToken?.symbol}
