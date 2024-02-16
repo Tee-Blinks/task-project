@@ -34,7 +34,7 @@ const Header = ({ address, connect }) => {
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
         <a href="/" className="navbar-brand">
-          <img src="assets/img/logo.png" alt="swap" />
+         <h2>Swap-Sphere</h2>
         </a>
         <button
         className="navbar-toggler"

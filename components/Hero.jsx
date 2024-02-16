@@ -41,7 +41,7 @@ const Hero = ({  setInputAmount,
               data-wow-duration="0.5s"
             >
               <h3 className="subtaitle">Fast and Convinient</h3>
-              <h1 className="head">Crytocurrency Exchange</h1>
+              <h1 className="head">Cryptocurrency Exchange</h1>
               <p className="text">
                 Lorem ipsum dolor sit amet 
                 consectetur adipisicing elit. 
